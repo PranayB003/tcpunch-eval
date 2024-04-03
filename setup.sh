@@ -13,4 +13,5 @@ cd -
 
 # Build test clients for evaluating tcpunch
 mkdir build
-cd build && cmake .. && make
+cd build && cmake .. && make && cd -
+mkdir bin && cp build/node-* extern/tcpunch/server/build/tcpunchd bin/
