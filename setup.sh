@@ -1,6 +1,3 @@
-# Pull tcpunch repo
-git submodule update --init
-
 # Build tcpunch client library and server binary
 mkdir -p extern/tcpunch/client/build
 mkdir -p extern/tcpunch/server/build
