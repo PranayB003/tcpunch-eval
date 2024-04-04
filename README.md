@@ -53,3 +53,8 @@ pranayb003/tcpunch-eval bash` followed by `./bin/node-b <IP>` and `./bin/node-a
 <IP>` respectively where `<IP>` is the hole-punching server's public IP address.
 If the connection is successfully established node B will receive the correct 
 message from node A.
+
+Function:
+```
+docker run --mount type=bind,source=./function/,target=/tmp/ --rm pranayb003/tcpunch-eval bash -c "rm -rf /tmp/deps/ && cd extern/tcpunch/client && mkdir -p /tmp/deps && cp ./tcpunch.h ./build/libtcpunch.a /tmp/deps/"
+```

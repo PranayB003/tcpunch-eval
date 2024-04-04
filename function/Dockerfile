@@ -31,10 +31,7 @@ RUN curl -sSL "https://github.com/Microsoft/vcpkg/archive/2024.03.25.tar.gz" | \
     && ./bootstrap-vcpkg.sh -disableMetrics
 
 # Copy the source code to /v/source and compile it.
-COPY ./function/ /v/source
-COPY ./extern/ /v/source/extern/
-RUN cd /v/source/extern/tcpunch/client && mkdir build && cd build && cmake .. \
-    && make
+COPY . /v/source
 WORKDIR /v/source
 
 # Run the CMake configuration step, setting the options to create
