@@ -1,0 +1,10 @@
+{
+  "name": "tcpunch-eval",
+  "version-string": "unversioned",
+  "description": [
+    "Verifies that a TCP connection can be established using TCPunch on GCP."
+  ],
+  "dependencies": [
+    "functions-framework-cpp"
+  ]
+}
